@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="shopinpager.wingstud.shopinpagerrider.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="shopinpager.wingstud.shopinpagerrider.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile2" />
+
+    <fragment
+        android:id="@+id/nav_cod"
+        android:name="shopinpager.wingstud.shopinpagerrider.ui.cod.CodLisfFragment"
+        android:label="@string/cod_order_list"
+        tools:layout="@layout/fragment_cod_lisf" />
+
+    <fragment
+        android:id="@+id/nav_today_pay"
+        android:name="shopinpager.wingstud.shopinpagerrider.ui.todaypayment.TodayPayment"
+        android:label="@string/today_s_payment"
+        tools:layout="@layout/fragment_today_payment" />
+    <fragment
+        android:id="@+id/nav_today_order"
+        android:name="shopinpager.wingstud.shopinpagerrider.ui.todayorders.TodayOrderFragment"
+        android:label="@string/todays_orders"
+        tools:layout="@layout/fragment_today_order" />
+    <fragment
+        android:id="@+id/nav_earning"
+        android:name="shopinpager.wingstud.shopinpagerrider.ui.earning.EarningFragment"
+        android:label="@string/your_earning"
+        tools:layout="@layout/fragment_earning" />
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="shopinpager.wingstud.shopinpagerrider.ui.orderhistory.framgments.DeliveredFragment"
+        android:label="@string/orders_history"
+        tools:layout="@layout/fragment_delivered" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="shopinpager.wingstud.shopinpagerrider.ui.logout.LogoutDialogFragment"
+        android:label="@string/logout"
+        tools:layout="@layout/logoutfragment" />
+</navigation>

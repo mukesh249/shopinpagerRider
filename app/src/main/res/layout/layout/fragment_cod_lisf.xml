@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.earning.EarningFragment">
+
+    <data></data>
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <HorizontalScrollView
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:id="@+id/headerScroll"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:id="@+id/snoTv"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_10"
+                    android:text="S. no"
+                    android:textAllCaps="true"
+                    android:gravity="center|start"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:id="@+id/orderIdTv"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_10"
+                    android:textStyle="bold"
+                    android:text="Order Id"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:id="@+id/AmtTv"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_10"
+                    android:text="Amount"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:id="@+id/statusTv"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_10"
+                    android:text="Status"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="150dp"
+                    android:id="@+id/riderMobileTv"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_10"
+                    android:text="Mobile Number"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:id="@+id/paymentModeTv"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_10"
+                    android:text="Payment Mode"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:id="@+id/dateTv"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_10"
+                    android:text="Date"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:id="@+id/actionTv"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_10"
+                    android:text="Action"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cod_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            tools:listitem="@layout/cod_list_item" />
+
+        <RelativeLayout
+            android:id="@+id/relEmptyWL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_80"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/empety_notification" />
+
+            <TextView
+                android:id="@+id/txt11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img1"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cod_order_list"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt11"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/empty_noti"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

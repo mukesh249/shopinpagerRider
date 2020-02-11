@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">ShopinPager Rider</string>
+
+    <string name="default_notification_channel_id">default_channel</string>
+
+    <string name="error_mobile_number_wrong">Please enter valid mobile number</string>
+
+    <string name="error_mobile_number_blank"> Mobile number should not be blank</string>
+    <string name="Ok">Ok</string>
+
+    <!--Login Screen Strings-->
+
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Slider Screen Strings-->
+    <string name="home">Home</string>
+    <string name="your_earning">Your Earning</string>
+    <string name="payment_report">Payment Report</string>
+    <string name="orders_history">Order History</string>
+    <string name="today_s_payment">Today\'s Payment</string>
+    <string name="todays_s_orders">Todays\'s Orders</string>
+    <string name="insentive">Insentive</string>
+    <string name="cod_order_list">COD Order List</string>
+    <string name="logout">Logout</string>
+
+    <!--Home Screen Strings-->
+
+    <!--Chat Screen Strings-->
+
+    <string name="profile">Profile</string>
+    <string name="todays_payment">Today\'s Payment</string>
+    <string name="todays_orders">Today\'s Orders</string>
+    <string name="new_order">New Order</string>
+    <string name="empty_noti">We\'ll let you know we\'ve gone something new for you</string>
+
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+
+    <string name="login_to_your_naccount">Login to your \nAccount</string>
+    <string name="accept_the_terms_and_condition">Accept the Terms and Condition</string>
+    <string name="sign_in">Sign In</string>
+    <string name="bonus_amount">Bonus Amount</string>
+    <string name="complete_delivery">COMPLETE DELIVERY</string>
+    <string name="my_earning">My Earning</string>
+    <string name="action">Action</string>
+    <string name="unpaid">Unpaid</string>
+    <string name="paid">Paid</string>
+    <string name="date">Date</string>
+    <string name="bonus">Bonus</string>
+    <string name="payment_order_details">Payment Order Details</string>
+</resources>

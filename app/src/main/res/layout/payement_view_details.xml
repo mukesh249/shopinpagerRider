@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:nestedScrollingEnabled="false"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/backLL"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="@dimen/dp_80"
+        android:id="@+id/snoTv"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:text="S. no"
+        android:textAllCaps="true"
+        android:gravity="center|start"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="@dimen/dp_100"
+        android:id="@+id/datetime_Tv"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:text=""
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:layout_width="@dimen/dp_100"
+        android:id="@+id/bonustv"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:layout_width="150dp"
+        android:id="@+id/orderIdTv"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:text="0"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:layout_height="match_parent"/>
+
+    <TextView
+
+        android:layout_width="@dimen/dp_100"
+        android:id="@+id/AmtTv"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:text="0"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:id="@+id/distanceTv"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:gravity="center"
+        android:text="0"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:layout_height="match_parent"/>
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:id="@+id/paymentModeTv"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:text=""
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:id="@+id/typeTv"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:text="0"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:layout_width="150dp"
+        android:id="@+id/actionTv"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:text="ViewDetails"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

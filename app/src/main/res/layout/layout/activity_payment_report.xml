@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    android:layout_height="match_parent"
+    tools:context=".ui.paymentreport.PaymentReport">
+    <LinearLayout
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:padding="12dp"
+            android:id="@+id/back_iv"
+            android:tint="@color/white"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/payment_report"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/unPaidTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/rounded_conner_white"
+            android:fontFamily="@font/raleway_regular"
+            android:text="@string/unpaid"
+            android:textColor="@color/colorPrimary" />
+        <TextView
+            android:layout_margin="@dimen/dp_3"
+            android:id="@+id/paidTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/rounded_conner_border"
+            android:fontFamily="@font/raleway_regular"
+            android:text="@string/paid"
+            android:textColor="@color/white" />
+
+
+
+    </LinearLayout>
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/viewPager"/>-->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/headerScroll"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:nestedScrollingEnabled="false"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="80dp"
+                android:id="@+id/snoTv"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:text="S. no"
+                android:textAllCaps="true"
+                android:gravity="center|start"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:id="@+id/fromDateTv"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:text="From Date"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent"/>
+
+            <TextView
+
+                android:layout_width="100dp"
+                android:id="@+id/toDateTv"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:gravity="center"
+                android:text="To Date"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent"/>
+
+            <TextView
+
+                android:layout_width="150dp"
+                android:id="@+id/totalOrderTv"
+                android:gravity="center"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:textStyle="bold"
+                android:text="Total Orders"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent"/>
+
+            <TextView
+
+                android:layout_width="150dp"
+                android:id="@+id/totalDistanceTv"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:gravity="center"
+                android:text="Total Distance"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent"/>
+
+            <TextView
+
+                android:layout_width="150dp"
+                android:id="@+id/orderAmtTv"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:text="Order Amount"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent"/>
+
+            <TextView
+
+                android:layout_width="150dp"
+                android:id="@+id/deductionTv"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:text="Deduction"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent"/>
+            <TextView
+
+                android:layout_width="200dp"
+                android:id="@+id/commissionTv"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:text="Commission(Per Km)"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_width="100dp"
+                android:id="@+id/feeTv"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:text="Fee(15%)"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent"/>
+            <TextView
+
+                android:layout_width="150dp"
+                android:id="@+id/payableAmtTv"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:text="Payable Amount"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent"/>
+            <TextView
+
+                android:layout_width="150dp"
+                android:id="@+id/actionTv"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:text="ViewDetails"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+    <RelativeLayout
+        android:id="@+id/relEmptyWL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/empety_notification" />
+
+        <TextView
+            android:id="@+id/txt11"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/img1"
+            android:layout_centerHorizontal="true"
+            android:text="@string/payment_report"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt11"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/empty_noti"
+                android:textColor="@color/gray"
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        tools:listitem="@layout/paid_item"
+        android:layout_width="match_parent"
+        android:id="@+id/rvClub"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
